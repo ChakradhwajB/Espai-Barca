@@ -31,30 +31,67 @@
             />
           </a>
 
-          <!-- Mobile menu -->
-          <div id="mobile-menu" class="block md:hidden">
-            <div class="flex flex-row items-center justify-end space-x-4">
-              <a
-                href="#home"
-                class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-300"
-                >Home</a
-              >
-              <a
-                href="#about"
-                class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-300"
-                >About</a
-              >
-              <a
-                href="#experience"
-                class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-300"
-                >Experience</a
-              >
-              <a
-                href="#news"
-                class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-300"
-                >News</a
-              >
-            </div>
+          <!-- Mobile Hamburger Button -->
+          <button
+            id="hamburger-btn"
+            class="md:hidden text-white text-3xl focus:outline-none"
+            aria-label="Open menu"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Mobile menu (hidden by default) -->
+          <div
+            id="mobile-menu-panel"
+            class="fixed top-0 left-0 w-full h-full bg-black/90 z-50 flex flex-col items-center justify-center space-y-8 transition-transform duration-300 translate-x-full md:hidden"
+          >
+            <button
+              id="close-mobile-menu"
+              class="absolute top-6 right-8 text-white text-3xl focus:outline-none"
+              aria-label="Close menu"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+            <a
+              href="#home"
+              class="font-[fcb-condensed-regular] text-2xl text-white hover:text-blue-500 transition-colors"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="font-[fcb-condensed-regular] text-2xl text-white hover:text-blue-500 transition-colors"
+              >About</a
+            >
+            <a
+              href="#spaces"
+              class="font-[fcb-condensed-regular] text-2xl text-white hover:text-blue-500 transition-colors"
+              >Spaces</a
+            >
+            <a
+              href="#experience"
+              class="font-[fcb-condensed-regular] text-2xl text-white hover:text-blue-500 transition-colors"
+              >Experience</a
+            >
+            <a
+              href="#integration"
+              class="font-[fcb-condensed-regular] text-2xl text-white hover:text-blue-500 transition-colors"
+              >Integration</a
+            >
+            <a
+              href="#sustainability"
+              class="font-[fcb-condensed-regular] text-2xl text-white hover:text-blue-500 transition-colors"
+              >Sustainability</a
+            >
+            <a
+              href="#news"
+              class="font-[fcb-condensed-regular] text-2xl text-white hover:text-blue-500 transition-colors"
+              >News</a
+            >
+            <a
+              href="#contact"
+              class="font-[fcb-condensed-regular] text-2xl text-white hover:text-blue-500 transition-colors"
+              >Contact</a
+            >
           </div>
 
           <!-- Desktop menu -->
@@ -774,11 +811,23 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
+      // Mobile menu toggle
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const mobileMenuPanel = document.getElementById("mobile-menu-panel");
+      const closeMobileMenu = document.getElementById("close-mobile-menu");
+      if (hamburgerBtn && mobileMenuPanel && closeMobileMenu) {
+        hamburgerBtn.addEventListener("click", () => {
+          mobileMenuPanel.classList.remove("translate-x-full");
+        });
+        closeMobileMenu.addEventListener("click", () => {
+          mobileMenuPanel.classList.add("translate-x-full");
+        });
+      }
+
       // You can also pass an optional settings object
       // below listed default settings
       AOS.init({
         offset: 50, // offset (in px) from the original trigger point
-
         duration: 2000, // values from 0 to 3000, with step 50ms
       });
     </script>
