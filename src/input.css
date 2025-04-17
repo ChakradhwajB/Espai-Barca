@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@font-face {
+  font-family: fcb-condensed-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("fonts/FC_BARCELONACONDENSEDPRO-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: fcb-condensed-bold;
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("fonts/FC_BARCELONACONDENSEDPRO-Bold.woff2") format("woff2");
+}
+@theme {
+  --font-regular: "fcb-condensed-regular", sans-serif;
+}
+@theme {
+  --font-bold: "fcb-condensed-bold", sans-serif;
+}

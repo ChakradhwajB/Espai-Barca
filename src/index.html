@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espai Barça</title>
+    <link href="./output.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/4e1f632ed1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body class="bg-black overflow-x-hidden">
+    <!-- Navigation -->
+    <nav
+      data-aos="fade-in"
+      data-aos-delay="300"
+      class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex items-center justify-between py-4">
+          <a href="#" class="flex items-center space-x-3">
+            <img
+              src="Images/espai_logo.svg"
+              alt="Espai Barça Logo"
+              class="h-10"
+            />
+          </a>
+
+          <!-- Mobile menu -->
+          <div id="mobile-menu" class="block md:hidden">
+            <div class="flex flex-row items-center justify-end space-x-4">
+              <a
+                href="#home"
+                class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-300"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-300"
+                >About</a
+              >
+              <a
+                href="#experience"
+                class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-300"
+                >Experience</a
+              >
+              <a
+                href="#news"
+                class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-300"
+                >News</a
+              >
+            </div>
+          </div>
+
+          <!-- Desktop menu -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#home"
+              class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-1500 text-shadow-sm text-shadow-black"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-1500 text-shadow-sm text-shadow-black"
+              >About</a
+            >
+            <a
+              href="#spaces"
+              class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-1500 text-shadow-sm text-shadow-black"
+              >Spaces</a
+            >
+            <a
+              href="#experience"
+              class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-1500 text-shadow-sm text-shadow-black"
+              >Experience</a
+            >
+            <a
+              href="#integration"
+              class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-1500 text-shadow-sm text-shadow-black"
+              >Integration</a
+            >
+            <a
+              href="#sustainability"
+              class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-1500 text-shadow-sm text-shadow-black"
+              >Sustainability</a
+            >
+            <a
+              href="#news"
+              class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-1500 text-shadow-sm text-shadow-black"
+              >News</a
+            >
+            <a
+              href="#contact"
+              class="font-[fcb-condensed-regular] text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-1500 text-shadow-sm text-shadow-black"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      data-aos="fade-in"
+      data-aos-delay="1500"
+      id="home"
+      class="relative min-h-screen"
+    >
+      <div class="absolute inset-0">
+        <img
+          src="Images/Stadium.png"
+          alt="Stadium"
+          class="w-full h-full object-cover bg-blend-overlay"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"
+        ></div>
+      </div>
+      <div class="relative min-h-screen flex items-end pb-24 px-6">
+        <div class="max-w-7xl mx-auto">
+          <h1
+            data-aos="fade-in"
+            data-aos-delay="2000"
+            class="font-[fcb-condensed-bold] text-5xl md:text-7xl text-white leading-tigt mb-6 text-shadow-lg text-shadow-black"
+          >
+            THE FUTURE OF<br />CAMP NOU IS HERE
+          </h1>
+          <p
+            data-aos="fade-in"
+            data-aos-delay="3000"
+            class="font-[fcb-condensed-bold] text-xl md:text-2xl text-gray-300 max-w-2xl mb-8 text-shadow-lg text-shadow-black"
+          >
+            Experience the transformation of FC Barcelona's iconic stadium into
+            a world-class sports and entertainment destination.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#"
+              data-aos="fade-right"
+              data-aos-delay="3000"
+              class="font-[fcb-condensed-regular] text-lg px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              Explore Project
+            </a>
+            <a
+              data-aos="fade-right"
+              data-aos-delay="3000"
+              href="https://www.youtube.com/watch?v=ySa7Km4kOCw"
+              target="_blank"
+              class="font-[fcb-condensed-regular] text-lg px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors"
+            >
+              Watch Video
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--about section start-->
+
+    <section id="about"></section>
+    <section
+      data-aos="fade-up"
+      class="min-h-screen bg-black bg-blend-overlay flex flex-col md:flex-row items-center justify-between px-12 py-24 gap-8"
+    >
+      <div
+        cdata-aos="fade-in"
+        data-aos-delay="1500"
+        class="flex flex-col w-full md:w-5/12 ml-20"
+      >
+        <h1 class="font-[fcb-condensed-bold] text-white text-3xl md:text-5xl">
+          ABOUT THE PROJECT
+        </h1>
+
+        <h2
+          class="font-[fcb-condensed-bold] text-white mt-10 md:mt-20 text-xl md:text-3xl"
+        >
+          ESPAI BARÇA, MORE THAN JUST A STADIUM
+        </h2>
+        <p
+          class="font-[fcb-condensed-regular] text-md md:text-xl text-white mt-12"
+        >
+          A space where anything is possible, a place to experience new ways of
+          enjoying sport and entertainment, strengthening inclusion and
+          integration with the neighborhood.
+        </p>
+        <p
+          class="font-[fcb-condensed-regular] text-white mt-12 text-md md:text-xl"
+        >
+          An innovative and groundbreaking project. A far-reaching improvement
+          to boost the Club’s growth, ensure new sources of income, and secure
+          the future of the organization.
+        </p>
+        <a
+          data-aos="fade-right"
+          href="about.html"
+          target="_blank"
+          class="mt-7 font-[fcb-condensed-regular] max-w-4/12 text-2xl mb-20 px-2 py-2 border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors ease-in-out duration-2000"
+        >
+          <div class="flex flex-row justify-between items-center">
+            Discover
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+      </div>
+
+      <div
+        data-aos="fade-in"
+        data-aos-delay="500"
+        class="w-full md:w-6/12 mt-8 md:mt-0"
+      >
+        <video
+          class="w-full rounded-xl"
+          controls
+          poster="images/Espai_Barca_Intro.png"
+        >
+          <source src="Images/Espai_Barca.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <!--spaces section start-->
+    <section id="spaces"></section>
+    <section
+      data-aos="fade-up"
+      class="min-h-screen bg-black bg-blend-overlay flex flex-col md:flex-row items-center justify-between px-4 md:px-12 py-16 md:py-24 gap-8"
+    >
+      <div
+        data-aos="fade-in"
+        data-aos-delay="1500"
+        class="flex flex-col w-full md:w-5/12"
+      >
+        <h1
+          class="font-[fcb-condensed-bold] text-white text-5xl md:text-7xl ml-0 md:ml-20 mb-6 md:mb-10"
+        >
+          SPACES
+        </h1>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 ml-0 md:ml-20 mt-6 md:mt-10"
+        >
+          <div
+            class="flex flex-col items-stretch bg-black/50 rounded-2xl p-6 min-w-[220px] w-full max-w-xs shadow-lg"
+          >
+            <h2 class="font-bold text-white text-lg md:text-2xl mb-3">
+              SPOTIFY CAMP NOU
+            </h2>
+            <a
+              data-aos="fade-right"
+              href="#"
+              target="_blank"
+              class="font-semibold text-base md:text-lg px-4 py-2 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors duration-300 w-full text-center"
+            >
+              Learn More
+            </a>
+          </div>
+          <div
+            class="flex flex-col items-stretch bg-black/50 rounded-2xl p-6 min-w-[220px] w-full max-w-xs shadow-lg"
+          >
+            <h2 class="font-bold text-white text-lg md:text-2xl mb-3">
+              NOU PALAU BLAUGRANA
+            </h2>
+            <a
+              data-aos="fade-right"
+              href="#"
+              target="_blank"
+              class="font-semibold text-base md:text-lg px-4 py-2 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors duration-300 w-full text-center"
+            >
+              Learn More
+            </a>
+          </div>
+          <div
+            class="flex flex-col items-stretch bg-black/50 rounded-2xl p-6 min-w-[220px] w-full max-w-xs shadow-lg"
+          >
+            <h2 class="font-bold text-white text-lg md:text-2xl mb-3">
+              CAMPUS BARCA
+            </h2>
+            <a
+              data-aos="fade-right"
+              href="#"
+              target="_blank"
+              class="font-semibold text-base md:text-lg px-4 py-2 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors duration-300 w-full text-center"
+            >
+              Learn More
+            </a>
+          </div>
+          <div
+            class="flex flex-col items-stretch bg-black/50 rounded-2xl p-6 min-w-[220px] w-full max-w-xs shadow-lg"
+          >
+            <h2 class="font-bold text-white text-lg md:text-2xl mb-3">
+              ESTADI JOHAN CRUYFF
+            </h2>
+            <a
+              data-aos="fade-right"
+              href="#"
+              target="_blank"
+              class="font-semibold text-base md:text-lg px-4 py-2 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors duration-300 w-full text-center"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        data-aos="fade-in"
+        data-aos-delay="500"
+        class="w-full md:w-6/12 mt-8 md:mt-0"
+      >
+        <img
+          src="Images/spotify-camp-nou.png"
+          alt="spotify camp nou"
+          class="w-full rounded-xl"
+        />
+      </div>
+    </section>
+    <!--experience section start-->
+    <section id="experience"></section>
+    <section
+      data-aos="fade-up"
+      class="min-h-screen bg-black bg-blend-overlay flex flex-col md:flex-row items-center justify-between px-12 py-24 gap-8"
+    >
+      <div
+        cdata-aos="fade-in"
+        data-aos-delay="1500"
+        class="flex flex-col w-full md:w-5/12"
+      >
+        <h1 class="ml-20 font-bold text-white text-5xl md:text-8xl">
+          A NEW EXPERIENCE
+        </h1>
+
+        <p class="ml-20 font-regular text-md md:text-xl text-white mt-12">
+          New ways to experience, feel, and live unforgettable moments. A
+          technological revolution, creating new spaces, environments, and
+          assets that generate additional revenues with a revamped Barça
+          Hospitality proposal.
+        </p>
+      </div>
+
+      <div
+        data-aos="fade-in"
+        data-aos-delay="500"
+        class="w-full md:w-6/12 mt-8 md:mt-0"
+      >
+        <img
+          src="Images/experience.png"
+          alt="Experience"
+          width="660"
+          height="760"
+          class="w-full rounded-xl"
+        />
+      </div>
+    </section>
+    <!--integration section start-->
+    <section id="integration"></section>
+    <section
+      data-aos="fade-up"
+      class="min-h-screen bg-black bg-blend-overlay flex flex-col md:flex-row items-center justify-between px-12 py-24 gap-8"
+    >
+      <div
+        data-aos="fade-in"
+        data-aos-delay="500"
+        class="w-full md:w-6/12 mt-8 md:mt-0 order-2 md:order-1"
+      >
+        <img
+          src="Images/integration.png"
+          alt="Experience"
+          width="660"
+          height="760"
+          class="w-full rounded-xl"
+        />
+      </div>
+      <div
+        cdata-aos="fade-in"
+        data-aos-delay="1500"
+        class="flex flex-col w-full md:w-5/12"
+      >
+        <h1 class="ml-20 font-bold text-white text-5xl md:text-8xl">
+          INTEGRATION <br />WITH OUR <br />
+          SURROUNDINGS
+        </h1>
+
+        <p class="ml-20 font-regular text-md md:text-xl text-white mt-12">
+          Integration with the neighborhood and the city is one of the
+          fundamental pillars, with a completely sustainable and environmentally
+          respectful space.
+        </p>
+      </div>
+    </section>
+    <!--sustainability section start-->
+    <section id="sustainability"></section>
+    <section
+      data-aos="fade-up"
+      class="min-h-screen bg-black bg-blend-overlay flex flex-col md:flex-row items-center justify-between px-12 py-24 gap-8"
+    >
+      <div
+        cdata-aos="fade-in"
+        data-aos-delay="1500"
+        class="flex flex-col w-full md:w-5/12"
+      >
+        <h1 class="ml-20 font-bold text-white text-5xl md:text-8xl">
+          A PIONEERING <br />
+          SUSTAINABILITY <br />
+          PROJECT
+        </h1>
+
+        <p class="ml-20 font-regular text-md md:text-xl text-white mt-12">
+          Implementation of green areas to protect biodiversity and people's
+          health, renewable and self-sufficient energy systems, water
+          consumption reduction, and a construction project based on the
+          circular economy.
+        </p>
+      </div>
+
+      <div
+        data-aos="fade-in"
+        data-aos-delay="500"
+        class="w-full md:w-6/12 mt-8 md:mt-0"
+      >
+        <img
+          src="Images/sustaniability.png"
+          alt="Experience"
+          width="660"
+          height="760"
+          class="w-full rounded-xl"
+        />
+      </div>
+    </section>
+
+    <!-- Newsroom Section -->
+    <section data-aos="fade-in" id="news" class="min-h-screen bg-black py-24">
+      <div class="bg-white rounded-4xl mx-4 sm:mx-8 p-8">
+        <div class="text-center mb-12">
+          <h1
+            class="font-bold text-black text-4xl md:text-6xl lg:text-8xl mb-4"
+          >
+            NEWSROOM
+          </h1>
+          <h2 class="font-normal text-black text-lg md:text-2xl">
+            News and Updates on Espai Barça
+          </h2>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        >
+          <!-- News Item 1 -->
+          <div
+            class="flex flex-col h-full bg-gray-50 rounded-xl overflow-hidden transition-transform hover:scale-105"
+          >
+            <img
+              src="Images/news1.png"
+              alt="Newsroom"
+              class="w-full aspect-video object-cover border-4 border-black"
+            />
+            <div class="p-4 flex flex-col flex-grow">
+              <div
+                class="flex justify-between text-sm md:text-base text-gray-600 mb-2"
+              >
+                <span>Commercial</span>
+                <span>11/02/2025</span>
+              </div>
+              <p
+                class="font-regular text-base md:text-lg text-black mb-4 flex-grow"
+              >
+                FC Barcelona and Roca sign agreement for Spotify Camp Nou...
+              </p>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300"
+                >Read More →</a
+              >
+            </div>
+          </div>
+          <!-- News Item 2 -->
+          <div
+            class="flex flex-col h-full bg-gray-50 rounded-xl overflow-hidden transition-transform hover:scale-105"
+          >
+            <img
+              src="Images/news2.png"
+              alt="Newsroom"
+              class="w-full aspect-video object-cover border-4 border-black"
+            />
+            <div class="p-4 flex flex-col flex-grow">
+              <div
+                class="flex justify-between text-sm md:text-base text-gray-600 mb-2"
+              >
+                <span>Construction</span>
+                <span>10/02/2025</span>
+              </div>
+              <p
+                class="font-regular text-base md:text-lg text-black mb-4 flex-grow"
+              >
+                Progress update: New stadium construction reaches milestone...
+              </p>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300"
+                >Read More →</a
+              >
+            </div>
+          </div>
+          <!-- News Item 3 -->
+          <div
+            class="flex flex-col h-full bg-gray-50 rounded-xl overflow-hidden transition-transform hover:scale-105"
+          >
+            <img
+              src="Images/news3.png"
+              alt="Newsroom"
+              class="w-full aspect-video object-cover border-4 border-black"
+            />
+            <div class="p-4 flex flex-col flex-grow">
+              <div
+                class="flex justify-between text-sm md:text-base text-gray-600 mb-2"
+              >
+                <span>Technology</span>
+                <span>09/02/2025</span>
+              </div>
+              <p
+                class="font-regular text-base md:text-lg text-black mb-4 flex-grow"
+              >
+                Smart stadium features unveiled for enhanced fan experience...
+              </p>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300"
+                >Read More →</a
+              >
+            </div>
+          </div>
+          <!-- News Item 4 -->
+          <div
+            class="flex flex-col h-full bg-gray-50 rounded-xl overflow-hidden transition-transform hover:scale-105"
+          >
+            <img
+              src="Images/news4.png"
+              alt="Newsroom"
+              class="w-full aspect-video object-cover border-4 border-black"
+            />
+            <div class="p-4 flex flex-col flex-grow">
+              <div
+                class="flex justify-between text-sm md:text-base text-gray-600 mb-2"
+              >
+                <span>Sustainability</span>
+                <span>08/02/2025</span>
+              </div>
+              <p
+                class="font-regular text-base md:text-lg text-black mb-4 flex-grow"
+              >
+                Green initiatives implemented in stadium construction...
+              </p>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300"
+                >Read More →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--contact section start-->
+    <section></section>
+    <section
+      data-aos="fade-in"
+      id="contact"
+      class="min-h-screen bg-black py-24"
+    >
+      <div
+        class="bg bg-gradient-to-l from-blue-600 to-red-500 rounded-4xl m-12"
+      >
+        <div class="flex flex-row justify-between">
+          <div class="flex flex-col items-center m-4">
+            <h1 class="font-bold text-white text-5xl md:text-8xl p-8 m-8">
+              WE LISTEN TO YOU
+            </h1>
+            <h2 class="font-regular text-white text-1xl md:text-4xl p-8 mb-20">
+              Members Ask, the Club answers.
+            </h2>
+            <a
+              data-aos="fade-right"
+              href="#"
+              target="_blank"
+              class="font-regular min-w-4/12 text-2xl mb-20 px-2 py-2 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors ease-in-out duration-2000"
+            >
+              <div class="flex flex-row justify-between items-center">
+                Contact Us
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </a>
+          </div>
+          <div class="flex flex-end">
+            <img src="Images/fcbarcelona-logo-color.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Sponsers-->
+    <div
+      data-aos="fade-in"
+      data-aos-delay="300"
+      class="bg-[#1A1A1A] py-12 px-4 sm:px-6 lg:px-8"
+    >
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-center text-white text-5xl font-bold mb-10">
+          Espai Barça Sponsors
+        </h2>
+
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center"
+        >
+          <!-- Spotify -->
+          <div class="transition-transform transform hover:scale-105">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
+              alt="Spotify"
+              class="h-12 grayscale hover:grayscale-0 transition duration-300"
+            />
+          </div>
+
+          <!-- Nike -->
+          <div class="transition-transform transform hover:scale-105">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg"
+              alt="Nike"
+              class="h-12 grayscale hover:grayscale-0 transition duration-300"
+            />
+          </div>
+
+          <!-- Beko -->
+          <div class="transition-transform transform hover:scale-105">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/0c/New_Beko_logo.svg"
+              alt="Beko"
+              class="h-12 object-contain grayscale hover:grayscale-0 transition duration-300"
+            />
+          </div>
+
+          <!-- Stanley Black & Decker -->
+          <div class="transition-transform transform hover:scale-105">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Stanley_Black_%26_Decker_Logo.svg"
+              alt="Stanley Black & Decker"
+              class="h-12 object-contain grayscale hover:grayscale-0 transition duration-300"
+            />
+          </div>
+
+          <!-- Philips -->
+          <div class="transition-transform transform hover:scale-105">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/52/Philips_logo_new.svg"
+              alt="Philips"
+              class="h-12 object-contain grayscale hover:grayscale-0 transition duration-300"
+            />
+          </div>
+
+          <!-- Turkish Airlines -->
+          <div class="transition-transform transform hover:scale-105">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/00/Turkish_Airlines_logo_2019_compact.svg"
+              alt="Turkish Airlines"
+              class="h-12 object-contain grayscale hover:grayscale-0 transition duration-300"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="bg-neutral-900 py-12"
+      data-aos="fade-in"
+      data-aos-duration="3000"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <img
+              src="Images/espai_logo.svg"
+              alt="Espai Barça Logo"
+              class="h-8 mb-6"
+            />
+            <p class="text-gray-400">
+              Building the future of football, one brick at a time.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-4">Contact Info</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>C. d'Aristides Maillol, 12</li>
+              <li>08028 Barcelona</li>
+              <li>Spain</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.862.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.897 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.897-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-neutral-800 mt-12 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2024 Espai Barça. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
