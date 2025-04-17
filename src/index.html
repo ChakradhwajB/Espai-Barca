@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Espai Barça</title>
     <link href="./output.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
     <script
       src="https://kit.fontawesome.com/4e1f632ed1.js"
@@ -771,5 +771,16 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      // You can also pass an optional settings object
+      // below listed default settings
+      AOS.init({
+        offset: 50, // offset (in px) from the original trigger point
+
+        duration: 2000, // values from 0 to 3000, with step 50ms
+      });
+    </script>
   </body>
 </html>
