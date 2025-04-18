@@ -20,15 +20,32 @@
       data-aos-delay="300"
       class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm"
     >
-      <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex items-center justify-between py-4">
           <a href="#" class="flex items-center space-x-3">
             <img
               src="Images/espai_logo.svg"
               alt="Espai Barça Logo"
-              class="h-10"
+              class="h-8 sm:h-10"
             />
           </a>
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-button" class="md:hidden text-white">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+          <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center space-x-8">
             <a
               href="#home"
@@ -50,6 +67,43 @@
               class="font-regular text-xl text-white hover:text-blue-500 transition-colors ease-in-out duration-1500 text-shadow-sm text-shadow-black"
               >Contact</a
             >
+          </div>
+          <!-- Mobile Navigation -->
+          <div
+            id="mobile-menu"
+            class="hidden md:hidden fixed inset-0 bg-black/95 z-50"
+          >
+            <div
+              class="flex flex-col items-center justify-center h-full space-y-8"
+            >
+              <a href="#home" class="text-2xl text-white hover:text-blue-500"
+                >Home</a
+              >
+              <a href="#about" class="text-2xl text-white hover:text-blue-500"
+                >About</a
+              >
+              <a href="#model" class="text-2xl text-white hover:text-blue-500"
+                >Financing</a
+              >
+              <a href="#contact" class="text-2xl text-white hover:text-blue-500"
+                >Contact</a
+              >
+              <button id="close-menu" class="absolute top-4 right-4 text-white">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -100,7 +154,7 @@
     <section id="about"></section>
     <section
       data-aos="fade-up"
-      class="min-h-screen bg-black bg-blend-overlay flex flex-col md:flex-row items-center justify-between px-12 py-24 gap-8"
+      class="min-h-screen bg-black bg-blend-overlay flex flex-col md:flex-row items-center justify-between px-4 sm:px-12 py-24 gap-8"
     >
       <div
         data-aos="fade-in"
@@ -118,21 +172,19 @@
       <div
         cdata-aos="fade-in"
         data-aos-delay="1500"
-        class="flex flex-col w-full md:w-5/12"
+        class="flex flex-col w-full md:w-5/12 md:ml-20"
       >
-        <h1 class="ml-20 font-bold text-white text-5xl md:text-8xl">
-          A VENUE<br />WORTHY OF THE<br />
-          WORLD'S BEST <br />
-          TEAM
+        <h1 class="font-bold text-white text-5xl md:text-8xl">
+          A VENUE WORTHY OF THE WORLD'S BEST TEAM
         </h1>
 
-        <p class="ml-20 font-regular text-md md:text-xl text-white mt-12">
+        <p class="font-regular text-md md:text-xl text-white mt-12">
           A new space for continued success. Opening up to the neighborhood and
           the city, ensuring comfort for members, generating new revenue streams
           for the Club, and increasing its international visibility. A space
           where everything is possible.
         </p>
-        <p class="ml-20 font-regular text-md md:text-xl text-white mt-12">
+        <p class="font-regular text-md md:text-xl text-white mt-12">
           A space to experience new ways of enjoying sports and entertainment. A
           driving force for the city and a home for Barça fans. At the forefront
           of technology and sustainability. Committing to equality and
@@ -146,27 +198,27 @@
     <section id="model"></section>
     <section
       data-aos="fade-up"
-      class="min-h-screen bg-black bg-blend-overlay flex flex-col md:flex-row items-center justify-between px-12 py-24 gap-8"
+      class="min-h-screen bg-black bg-blend-overlay flex flex-col md:flex-row items-center justify-between px-4 sm:px-12 py-24 gap-8"
     >
       <div
         cdata-aos="fade-in"
         data-aos-delay="1500"
-        class="flex flex-col w-full md:w-5/12"
+        class="flex flex-col w-full md:w-5/12 md:ml-20"
       >
-        <h1 class="ml-20 font-bold text-white text-5xl md:text-8xl">
+        <h1 class="font-bold text-white text-5xl md:text-8xl">
           FINANCING MODEL
         </h1>
 
-        <p class="ml-20 font-regular text-md md:text-xl text-white mt-12">
+        <p class="font-regular text-md md:text-xl text-white mt-12">
           Espai Barça will be the largest and most innovative sports complex in
           the heart of a European city. A unique project: up to €1.5 billion in
           investment, 18 hectares of land in a central location in a city like
           Barcelona, ​​and with 350,000 m2 of roofing.
         </p>
-        <h2 class="ml-20 font-bold text-white text-3xl md:text-5xl mt-12">
+        <h2 class="font-bold text-white text-3xl md:text-5xl mt-12">
           Financing structure
         </h2>
-        <p class="ml-20 font-regular text-md md:text-xl text-white mt-12">
+        <p class="font-regular text-md md:text-xl text-white mt-12">
           Espai Barça is an essential project to keep FC Barcelona at the
           cutting-edge of the sports world. Therefore, an innovative financing
           structure has been designed that respects the three red lines approved
@@ -205,18 +257,13 @@
           </div>
 
           <h2 class="font-bold text-white text-md md:text-2xl mt-12">
-            WITH ADDITIONAL REVENUES FROM <br />
-            THE NEW PROJECT
+            WITH ADDITIONAL REVENUES FROM THE NEW PROJECT
           </h2>
           <p class="font-regular text-md md:text-xl text-white mt-12 ml">
-            Financing is based on the additional <br />
-            income that the project will generate<br />
-            thanks to new hospitality offerings,<br />
-            sponsorships and title rights, the <br />
-            Museum and its visits, ticketing<br />
-            and catering, as well as the <br />management of new assets and
-            <br />
-            events generated by Espai Barça.
+            Financing is based on the additional income that the project will
+            generate thanks to new hospitality offerings, sponsorships and title
+            rights, the Museum and its visits, ticketing and catering, as well
+            as the management of new assets and events generated by Espai Barça.
           </p>
         </div>
         <div class="flex flex-col w-full md:w-5/12 items-center">
@@ -224,13 +271,11 @@
             <i class="fa-solid fa-scroll fa-2xl"></i>
           </div>
           <h2 class="font-bold text-white text-md md:text-2xl mt-12">
-            WITH GUARANTEES FROM ESPAI <br />
-            BARÇA ITSELF
+            WITH GUARANTEES FROM ESPAI BARÇA ITSELF
           </h2>
           <p class="font-regular text-md md:text-xl text-white mt-12">
-            The Club has negotiated financing at an <br />
-            estimated average net interest rate of <br />5.53%, with 20
-            international investors.
+            The Club has negotiated financing at an estimated average net
+            interest rate of 5.53%, with 20 international investors.
           </p>
         </div>
         <div class="flex flex-col w-full md:w-5/12 items-center">
@@ -238,15 +283,13 @@
             <i class="fa-solid fa-building fa-2xl"></i>
           </div>
           <h2 class="font-bold text-white text-md md:text-2xl mt-12">
-            GRACE PERIOD DURING THE <br />CONSTRUCTION PHASE
+            GRACE PERIOD DURING THE CONSTRUCTION PHASE
           </h2>
           <p class="font-regular text-md md:text-xl text-white mt-12">
-            During the construction period, and until <br />
-            the completion of the renovation of the <br />
-            Stadium in 2026, the principal is not<br />
-            repaid. In addition, 100% of the <br />
-            construction costs and interest during <br />
-            the work, which began on June 1, 2023, <br />are guaranteed.
+            During the construction period, and until the completion of the
+            renovation of the Stadium in 2026, the principal is not repaid. In
+            addition, 100% of the construction costs and interest during the
+            work, which began on June 1, 2023, are guaranteed.
           </p>
         </div>
         <div class="flex flex-col w-full md:w-5/12 items-center">
@@ -257,15 +300,11 @@
             MOBILIZATION OF UP TO €1.5 BILLION
           </h2>
           <p class="font-regular text-md md:text-xl text-white mt-12">
-            At the Assemblies held on October 17 <br />and 23, 2020, the
-            commissioners<br />
-            approved by a wide majority the<br />
-            authorization to carry out the necessary <br />actions to subscribe
-            to an operation to<br />
-            finance up to €1.5 billion. This figure was <br />
-            also subsequently approved by the <br />
-            members in the referendum of <br />
-            December 19, 2021.
+            At the Assemblies held on October 17 and 23, 2020, the commissioners
+            approved by a wide majority the authorization to carry out the
+            necessary actions to subscribe to an operation to finance up to €1.5
+            billion. This figure was also subsequently approved by the members
+            in the referendum of December 19, 2021.
           </p>
         </div>
       </div>
@@ -327,7 +366,7 @@
         <div class="flex flex-col self-center items-center">
           <img
             class="max-w-10/12"
-            src="images/pi_chart.svg"
+            src="Images/pi_chart.svg"
             alt="finance"
             width="660"
             height="760"
@@ -341,129 +380,132 @@
       </div>
     </section>
     <!-- Newsroom Section -->
-    <section id="news"></section>
-    <section data-aos="fade-in" class="min-h-screen bg-black py-24">
-      <div class="bg-white rounded-4xl m-8">
-        <div class="flex flex-col items-center m-4">
-          <h1 class="font-bold text-black text-5xl md:text-8xl p-4">
+    <section data-aos="fade-in" id="news" class="min-h-screen bg-black py-24">
+      <div class="bg-white rounded-4xl mx-4 sm:mx-8 p-8">
+        <div class="text-center mb-12">
+          <h1
+            class="font-bold text-black text-4xl md:text-6xl lg:text-8xl mb-4"
+          >
             NEWSROOM
           </h1>
-          <h2 class="font-normal text-black text-xl md:text-2xl">
+          <h2 class="font-normal text-black text-lg md:text-2xl">
             News and Updates on Espai Barça
           </h2>
         </div>
-        <!--news 1-->
-        <div class="flex flex-row items-center">
-          <div class="flex flex-col justify-center items-center m-6">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        >
+          <!-- News Item 1 -->
+          <div
+            class="flex flex-col h-full bg-gray-50 rounded-xl overflow-hidden transition-transform hover:scale-105"
+          >
             <img
               src="Images/news1.png"
               alt="Newsroom"
-              width="318"
-              height="220"
-              class="max-w-228px rounded-xl border-8 border-black"
+              class="w-full aspect-video object-cover border-4 border-black"
             />
-            <div class="flex flex-row mt-3">
-              <p class="font-regular text-base md:text-xl text-black mr-40">
-                Comercial
+            <div class="p-4 flex flex-col flex-grow">
+              <div
+                class="flex justify-between text-sm md:text-base text-gray-600 mb-2"
+              >
+                <span>Commercial</span>
+                <span>11/02/2025</span>
+              </div>
+              <p
+                class="font-regular text-base md:text-lg text-black mb-4 flex-grow"
+              >
+                FC Barcelona and Roca sign agreement for Spotify Camp Nou...
               </p>
-              <p class="font-regular text-base md:text-xl text-black">
-                11/02/2025
-              </p>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300"
+                >Read More →</a
+              >
             </div>
-
-            <p class="font-regular text-base md:text-xl text-black mt-4">
-              FC Barcelona and Roca sign agreement for <br />
-              Spotify Camp Nou...
-            </p>
-            <a
-              href="#"
-              class="underline font-regular text-xl md:xl text-blue-400 mt-4 hover:text-blue-700 ease-in-out duration-900"
-              >Read More...</a
-            >
           </div>
-          <!--news 2-->
-          <div class="flex flex-col justify-center items-center m-6">
+          <!-- News Item 2 -->
+          <div
+            class="flex flex-col h-full bg-gray-50 rounded-xl overflow-hidden transition-transform hover:scale-105"
+          >
             <img
               src="Images/news2.png"
               alt="Newsroom"
-              width="318"
-              height="220"
-              class="max-w-228px rounded-xl border-8 border-black"
+              class="w-full aspect-video object-cover border-4 border-black"
             />
-            <div class="flex flex-row mt-3">
-              <p class="font-regular text-base md:text-xl text-black mr-40">
-                Comercial
+            <div class="p-4 flex flex-col flex-grow">
+              <div
+                class="flex justify-between text-sm md:text-base text-gray-600 mb-2"
+              >
+                <span>Construction</span>
+                <span>10/02/2025</span>
+              </div>
+              <p
+                class="font-regular text-base md:text-lg text-black mb-4 flex-grow"
+              >
+                Progress update: New stadium construction reaches milestone...
               </p>
-              <p class="font-regular text-base md:text-xl text-black">
-                04/02/2025
-              </p>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300"
+                >Read More →</a
+              >
             </div>
-
-            <p class="font-regular text-base md:text-xl text-black mt-4">
-              FC Barcelona and Panasonic agree contract for <br />
-              Espai Barça...
-            </p>
-            <a
-              href="#"
-              class="underline font-regular text-xl md:xl text-blue-400 mt-4 hover:text-blue-700 ease-in-out duration-900"
-              >Read More...</a
-            >
           </div>
-          <!--news 3-->
-          <div class="flex flex-col justify-center items-center m-6">
+          <!-- News Item 3 -->
+          <div
+            class="flex flex-col h-full bg-gray-50 rounded-xl overflow-hidden transition-transform hover:scale-105"
+          >
             <img
               src="Images/news3.png"
               alt="Newsroom"
-              width="318"
-              height="220"
-              class="max-w-228px rounded-xl border-8 border-black"
+              class="w-full aspect-video object-cover border-4 border-black"
             />
-            <div class="flex flex-row mt-3">
-              <p class="font-regular text-base md:text-xl text-black mr-40">
-                Comercial
+            <div class="p-4 flex flex-col flex-grow">
+              <div
+                class="flex justify-between text-sm md:text-base text-gray-600 mb-2"
+              >
+                <span>Technology</span>
+                <span>09/02/2025</span>
+              </div>
+              <p
+                class="font-regular text-base md:text-lg text-black mb-4 flex-grow"
+              >
+                Smart stadium features unveiled for enhanced fan experience...
               </p>
-              <p class="font-regular text-base md:text-xl text-black">
-                11/02/2025
-              </p>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300"
+                >Read More →</a
+              >
             </div>
-
-            <p class="font-regular text-base md:text-xl text-black mt-4">
-              Barça Hospitality launches VIP Ring Seats, the <br />
-              last Premium seats to be unveiled...
-            </p>
-            <a
-              href="#"
-              class="underline font-regular text-xl md:xl text-blue-400 mt-4 hover:text-blue-700 ease-in-out duration-900"
-              >Read More...</a
-            >
           </div>
-          <!--news 4-->
-          <div class="flex flex-col justify-center items-center m-6">
+          <!-- News Item 4 -->
+          <div
+            class="flex flex-col h-full bg-gray-50 rounded-xl overflow-hidden transition-transform hover:scale-105"
+          >
             <img
               src="Images/news4.png"
               alt="Newsroom"
-              width="318"
-              height="220"
-              class="max-w-228px rounded-xl border-8 border-black"
+              class="w-full aspect-video object-cover border-4 border-black"
             />
-            <div class="flex flex-row mt-3">
-              <p class="font-regular text-base md:text-xl text-black mr-40">
-                Comercial
+            <div class="p-4 flex flex-col flex-grow">
+              <div
+                class="flex justify-between text-sm md:text-base text-gray-600 mb-2"
+              >
+                <span>Sustainability</span>
+                <span>08/02/2025</span>
+              </div>
+              <p
+                class="font-regular text-base md:text-lg text-black mb-4 flex-grow"
+              >
+                Green initiatives implemented in stadium construction...
               </p>
-              <p class="font-regular text-base md:text-xl text-black">
-                11/02/2025
-              </p>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300"
+                >Read More →</a
+              >
             </div>
-
-            <p class="font-regular text-base md:text-xl text-black mt-4">
-              FC Barcelona and Raventós Codorníu <br />
-              sign agreement for new Espai Barça
-            </p>
-            <a
-              href="#"
-              class="underline font-regular text-xl md:xl text-blue-400 mt-4 hover:text-blue-700 ease-in-out duration-900"
-              >Read More...</a
-            >
           </div>
         </div>
       </div>
@@ -476,11 +518,13 @@
       class="min-h-screen bg-black py-24"
     >
       <div
-        class="bg bg-gradient-to-l from-blue-600 to-red-500 rounded-4xl m-12"
+        class="bg bg-gradient-to-l from-blue-600 to-red-500 rounded-4xl mx-4 sm:m-12"
       >
-        <div class="flex flex-row justify-between">
-          <div class="flex flex-col items-center m-4">
-            <h1 class="font-bold text-white text-5xl md:text-8xl p-8 m-8">
+        <div class="flex flex-col md:flex-row justify-between p-4">
+          <div class="flex flex-col items-center md:items-start m-4">
+            <h1
+              class="font-bold text-white text-4xl md:text-8xl p-4 sm:p-8 m-4 sm:m-8 text-center md:text-left"
+            >
               WE LISTEN TO YOU
             </h1>
             <h2 class="font-regular text-white text-1xl md:text-4xl p-8 mb-20">
@@ -498,8 +542,11 @@
               </div>
             </a>
           </div>
-          <div class="flex flex-end">
-            <img src="Images/fcbarcelona-logo-color.svg" />
+          <div class="hidden md:flex flex-end">
+            <img
+              src="Images/fcbarcelona-logo-color.svg"
+              alt="FC Barcelona Logo"
+            />
           </div>
         </div>
       </div>
@@ -684,8 +731,22 @@
     // below listed default settings
     AOS.init({
       // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 100, // offset (in px) from the original trigger point
+      offset: 50, // offset (in px) from the original trigger point
       duration: 3000, // values from 0 to 3000, with step 50ms
+    });
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const closeMenuButton = document.getElementById("close-menu");
+
+    mobileMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.remove("hidden");
+    });
+
+    closeMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
     });
   </script>
 </html>
+```
